@@ -311,6 +311,12 @@ namespace HoloToolkit.Unity.InputModule
 
         private void OnCollisionEnter(Collision collision)
         {
+            // Make sure that code will only execute once object hits the spatial mapping surface
+            if (!collision.gameObject.name.StartsWith("Surface"))
+            {
+                return;
+            }
+
             switch (PokeballStats)
             {
                 case PokeballStatus.Occupied:
