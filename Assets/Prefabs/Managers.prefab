@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114401879523243282}
   - component: {fileID: 114543307441694240}
   - component: {fileID: 114124857122694084}
+  - component: {fileID: 114538316907140724}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -139,6 +140,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b160d197a8ca1894796ae263bafec0ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114538316907140724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657747623344986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37870ab7a81bfb74b9fa277cf45b06d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetStabilizationPlane: 1
+  LerpStabilizationPlanePowerCloser: 4
+  LerpStabilizationPlanePowerFarther: 7
+  targetOverride: {fileID: 0}
+  trackVelocity: 0
+  UseGazeManager: 1
+  DefaultPlaneDistance: 2
+  DrawGizmos: 0
 --- !u!114 &114543307441694240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +174,7 @@ MonoBehaviour:
   RaycastLayerMasks:
   - serializedVersion: 2
     m_Bits: 4294967291
-  Stabilizer: {fileID: 0}
+  Stabilizer: {fileID: 114124857122694084}
   GazeTransform: {fileID: 0}
 --- !u!114 &114681691859595792
 MonoBehaviour:

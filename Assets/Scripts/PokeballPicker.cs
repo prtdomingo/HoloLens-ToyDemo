@@ -1,16 +1,28 @@
-﻿using System.Collections;
+﻿using HoloToolkit.Unity.InputModule;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Pokeball : MonoBehaviour {
+public class PokeballPicker : MonoBehaviour, IFocusable, IInputClickHandler
+{
+    void Start ()
+    {
+        Debug.Log("Start");
+	}
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void OnInputClicked(InputEventData eventData)
+    {
+        Debug.Log("WHY");
+    }
+
+    public void OnFocusEnter()
+    {
+        Debug.Log("Enter");
+    }
+
+    public void OnFocusExit()
+    {
+        Debug.Log("Exit");
+    }
 }
