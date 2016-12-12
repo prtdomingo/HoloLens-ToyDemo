@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 135878562615120988}
   - component: {fileID: 23793160205076714}
   - component: {fileID: 114203500496997934}
+  - component: {fileID: 114078700976991320}
   m_Layer: 0
   m_Name: Pokeball
   m_TagString: Untagged
@@ -100,9 +101,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1712820919851612}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.008214474, y: -0.17059302, z: 0.16909122}
-  m_LocalScale: {x: 0.16489421, y: 0.16489421, z: 0.16489421}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.47, y: -0.17059302, z: -0.15}
+  m_LocalScale: {x: 0.16488999, y: 0.16488999, z: 0.16488999}
   m_Children:
   - {fileID: 4629355894309636}
   - {fileID: 4617404821578350}
@@ -299,6 +300,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114078700976991320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712820919851612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b04277eb993ba4d80fa68b5d97e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PokeballStats: 0
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  IsKeepUpright: 0
+  IsOrientTowardsUser: 1
+  IsDraggingEnabled: 1
 --- !u!114 &114203500496997934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,6 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19b04277eb993ba4d80fa68b5d97e117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PokeballStats: 1
   HostTransform: {fileID: 0}
   DistanceScale: 2
   IsKeepUpright: 0
