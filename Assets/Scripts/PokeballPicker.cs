@@ -320,6 +320,9 @@ namespace HoloToolkit.Unity.InputModule
             switch (PokeballStats)
             {
                 case PokeballStatus.Occupied:
+                    gameObject.GetComponent<Rigidbody>().useGravity = false;
+                    gameObject.GetComponent<SphereCollider>().material = null;
+
                     var pokemonObject = Instantiate(Resources.Load("Squirtle")) as GameObject;
                     pokemonObject.GetComponent<AudioSource>().Play();
                     pokemonObject.transform.position = gameObject.transform.position;

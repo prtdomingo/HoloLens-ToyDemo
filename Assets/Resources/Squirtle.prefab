@@ -85,6 +85,9 @@ GameObject:
   - component: {fileID: 4673725200284698}
   - component: {fileID: 65765243413032216}
   - component: {fileID: 82727524606041464}
+  - component: {fileID: 114674537062334374}
+  - component: {fileID: 54253517562797304}
+  - component: {fileID: 114143435256014394}
   m_Layer: 0
   m_Name: Squirtle
   m_TagString: Untagged
@@ -140,8 +143,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1858627060862816}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 5.5349064, y: -1.8123754, z: 6.9483237}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -4.156767, y: -2.2431338, z: -2.2605681}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4725670108325144}
   - {fileID: 4962755713715502}
@@ -266,6 +269,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341377325768948}
   m_Mesh: {fileID: 4300002, guid: 35129336afc80d74783f35287cff3a2f, type: 3}
+--- !u!54 &54253517562797304
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858627060862816}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 96
+  m_CollisionDetection: 0
 --- !u!65 &65765243413032216
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -276,8 +294,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 4.673017, z: 4.528386}
-  m_Center: {x: 0, y: -2.3365085, z: 0.2641945}
+  m_Size: {x: 4, y: 4.5997214, z: 4.5283866}
+  m_Center: {x: 0, y: -2.3731565, z: 0.264194}
 --- !u!82 &82727524606041464
 AudioSource:
   m_ObjectHideFlags: 1
@@ -358,3 +376,123 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114143435256014394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858627060862816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef95b6ebb6ce4544a2cfc10b72b5374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  jumpSpeed: 3
+--- !u!114 &114674537062334374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858627060862816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bf28c8a166562499450742d2b935c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDiscoverServer: 0
+  ipStartsWith: 192.168.
+  serverHostName: 192.168.43.117
+  controllers:
+  - isConnected: 0
+    batteryType: 0
+    batteryLevel: 0
+    button_shoulder_L: 0
+    button_shoulder_R: 0
+    button_dpad_U: 0
+    button_dpad_D: 0
+    button_dpad_L: 0
+    button_dpad_R: 0
+    button_start: 0
+    button_back: 0
+    button_A: 0
+    button_B: 0
+    button_X: 0
+    button_Y: 0
+    button_thumb_L: 0
+    button_thumb_R: 0
+    trigger_L: 0
+    trigger_R: 0
+    thumb_Lx: 0
+    thumb_Ly: 0
+    thumb_Rx: 0
+    thumb_Ry: 0
+  - isConnected: 0
+    batteryType: 0
+    batteryLevel: 0
+    button_shoulder_L: 0
+    button_shoulder_R: 0
+    button_dpad_U: 0
+    button_dpad_D: 0
+    button_dpad_L: 0
+    button_dpad_R: 0
+    button_start: 0
+    button_back: 0
+    button_A: 0
+    button_B: 0
+    button_X: 0
+    button_Y: 0
+    button_thumb_L: 0
+    button_thumb_R: 0
+    trigger_L: 0
+    trigger_R: 0
+    thumb_Lx: 0
+    thumb_Ly: 0
+    thumb_Rx: 0
+    thumb_Ry: 0
+  - isConnected: 0
+    batteryType: 0
+    batteryLevel: 0
+    button_shoulder_L: 0
+    button_shoulder_R: 0
+    button_dpad_U: 0
+    button_dpad_D: 0
+    button_dpad_L: 0
+    button_dpad_R: 0
+    button_start: 0
+    button_back: 0
+    button_A: 0
+    button_B: 0
+    button_X: 0
+    button_Y: 0
+    button_thumb_L: 0
+    button_thumb_R: 0
+    trigger_L: 0
+    trigger_R: 0
+    thumb_Lx: 0
+    thumb_Ly: 0
+    thumb_Rx: 0
+    thumb_Ry: 0
+  - isConnected: 0
+    batteryType: 0
+    batteryLevel: 0
+    button_shoulder_L: 0
+    button_shoulder_R: 0
+    button_dpad_U: 0
+    button_dpad_D: 0
+    button_dpad_L: 0
+    button_dpad_R: 0
+    button_start: 0
+    button_back: 0
+    button_A: 0
+    button_B: 0
+    button_X: 0
+    button_Y: 0
+    button_thumb_L: 0
+    button_thumb_R: 0
+    trigger_L: 0
+    trigger_R: 0
+    thumb_Lx: 0
+    thumb_Ly: 0
+    thumb_Rx: 0
+    thumb_Ry: 0
