@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoDiscoverServer: 0
   ipStartsWith: 192.168.
-  serverHostName: 192.168.43.117
+  serverHostName: localhost
   controllers:
   - isConnected: 0
     batteryType: 0
